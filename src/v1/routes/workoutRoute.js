@@ -3,12 +3,12 @@ const router = express();
 const workoutControllers = require('../../controllers/workoutController.js')
 
 
-
+//Obtenemos todos los datos y logicas de ejecucion del controller
 router.get('/', workoutControllers.getAllWorkouts);
 
 router.get('/:workoutId', workoutControllers.getWorkoutById)
 
-    .post('/:workoutId', workoutControllers.createWorkout)
+    .post('/', workoutControllers.createWorkout)
 
     .patch('/:workoutId', workoutControllers.updateWorkout)
 

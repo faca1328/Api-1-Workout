@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001
 
 app.use(express.json());
 
-
+// llamamos a la ruta que queremos que se ejecute en esta dirección.
 app.use('/api/v1', v1WorkoutRoute);
 
 /* app.get("/", (req, res) => { 
