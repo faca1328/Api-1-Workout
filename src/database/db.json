@@ -1,30 +1,6 @@
 {
   "workouts": [
     {
-      "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
-      "name": "Tommy V",
-      "mode": "For Time",
-      "equipment": [
-        "barbell",
-        "rope"
-      ],
-      "exercises": [
-        "21 thrusters",
-        "12 rope climbs, 15 ft",
-        "15 thrusters",
-        "9 rope climbs, 15 ft",
-        "9 thrusters",
-        "6 rope climbs, 15 ft"
-      ],
-      "createdAt": "4/20/2022, 2:21:56 PM",
-      "updatedAt": "4/20/2022, 2:21:56 PM",
-      "trainerTips": [
-        "Split the 21 thrusters as needed",
-        "Try to do the 9 and 6 thrusters unbroken",
-        "RX Weights: 115lb/75lb"
-      ]
-    },
-    {
       "id": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
       "name": "Dead Push-Ups",
       "mode": "AMRAP 10",
@@ -65,8 +41,8 @@
       ]
     },
     {
-      "name": "aaaaaaaaaaaaaaa",
-      "mode": "bbbbbbbbbbbbbbbbbbbbbbb",
+      "name": "actualizado",
+      "mode": "hoy 10/04/24",
       "equipment": [
         "barbell",
         "rope"
@@ -86,7 +62,37 @@
       ],
       "id": "0d9a1ae2-3389-4234-967f-4a154e651f0b",
       "createdAt": "8/4/2024",
-      "updatedAt": "8/4/2024"
+      "updatedAt": "8/4/2024",
+      "updateAt": "10/4/2024"
+    },
+    {
+      "id": "7262185b-104a-44cf-99bc-c6314cd3f316",
+      "createdAt": "10/4/2024",
+      "updatedAt": "10/4/2024"
+    },
+    {
+      "name": "Tommy",
+      "mode": "For Tim",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters",
+        "12 rope climbs, 15 ft",
+        "15 thrusters",
+        "9 rope climbs, 15 ft",
+        "9 thrusters",
+        "6 rope climbs, 15 ft"
+      ],
+      "trainerTips": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken",
+        "RX Weights: 115lb/75lb"
+      ],
+      "id": "221f35c6-d3b2-41b4-8271-c4fe19417ff1",
+      "createdAt": "10/4/2024",
+      "updatedAt": "10/4/2024"
     }
   ]
 }

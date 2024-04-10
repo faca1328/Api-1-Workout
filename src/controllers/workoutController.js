@@ -1,5 +1,7 @@
 const workoutServices = require('../services/workoutServices');
 
+//ESTO ES LO QUE SE VA A VER EN LA PAGINA
+
 //El controller crea la logica de los datos que recive del servicio.
 const getAllWorkouts = (req, res) => {
     const allWorkouts = workoutServices.getAllWorkouts();
@@ -7,7 +9,12 @@ const getAllWorkouts = (req, res) => {
 };
 
 const getWorkoutById = (req, res) => {
-    const workoutId = workoutServices.getWorkoutById(req.params.id);
+    const {params: {workoutId} } = req;
+    
+    if(!workoutId) return res.send({ status: 404, data: 'error por id' });
+
+    const workout = workoutServices.getWorkoutById(workoutId);
+    res.status(200).send({data: workout});
 };
 
 
@@ -38,11 +45,20 @@ const createWorkout = (req, res) => {
 };
 
 const updateWorkout = (req, res) => {
-    const updateWorkout = workoutServices.updateWorkout(req.params.id);
+    const {body , params: {workoutId}} = req;
+    if(!workoutId) return res.send({ status: 404, data: 'error al actualizar' });
+
+    const updatedWorkout = workoutServices.updateWorkout(body, workoutId);
+    res.status(200).send(updatedWorkout);
 };
 
 const deleteWorkout = (req, res) => {
-    workoutServices.deleteWorkout(req.params.id);
+    const {params: {workoutId} } = req;
+    
+    if(!workoutId) return res.send({ status: 404, data: 'error por id al borrar' });
+
+    workoutServices.deleteWorkout(workoutId);
+    res.status(204).send(workoutId);
 };
 
 
